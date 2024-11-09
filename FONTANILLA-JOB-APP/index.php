@@ -16,12 +16,12 @@
 			<?php echo $_SESSION['message']; ?>
 		</h1>
 	<?php } unset($_SESSION['message']); ?>
-
+	<h1>APPLICANT RECORDS OF AIR CONDITIONING SERVICE</h1>
 	<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="GET">
 		<input type="text" name="searchInput" placeholder="Search here">
 		<p><input type="submit" name="searchBtn"></p>
 		<p><input type="button" value="Clear Search Query" onclick="window.location.href='index.php';"></p>
-	<p><input type="button" value="Insert New User" onclick="window.location.href='insert.php';"></p>
+	<p><input type="button" value="Insert New Applicant" onclick="window.location.href='insert.php';"></p>
 	</form>
 
 	<table style="width:100%; margin-top: 20px;">

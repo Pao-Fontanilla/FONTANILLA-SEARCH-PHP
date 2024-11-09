@@ -10,7 +10,7 @@
 </head>
 <body>
 	<?php $getUserByID = getUserByID($pdo, $_GET['id']); ?>
-	<h1>Edit the user!</h1>
+	<h1>Edit the Applicant!</h1>
 	<form action="core/handleForms.php?id=<?php echo $_GET['id']; ?>" method="POST">
 		<p>
 			<label for="firstName">First Name</label> 

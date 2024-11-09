@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<h1>Are you sure you want to delete this user?</h1>
+	<h1>Are you sure you want to delete this applicant?</h1>
 	<?php $getUserByID = getUserByID($pdo, $_GET['id']); ?>
 	<div class="container" style="border-style: solid; border-color: red; background-color: #ffcbd1;height: 500px; padding: 20px;">
 		<h2>First Name: <?php echo $getUserByID['first_name']; ?></h2>

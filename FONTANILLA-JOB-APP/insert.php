@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<h1>Insert a New User!</h1>
+	<h1>Insert a New Applicant!</h1>
 	<form action="core/handleForms.php" method="POST">
 		<p>
 			<label for="firstName">First Name</label> 
