@@ -41,9 +41,14 @@
 			<input type="text" name="nationality" value="<?php echo $getUserByID['nationality']; ?>">
 		</p>
 		<p>
-			<label for="firstName">AC Specialty</label> 
-			<input type="text" name="ac_specialty" value="<?php echo $getUserByID['ac_specialty']; ?>">
-			<p><input type="submit" value="Save" name="editUserBtn"></p>
+		<label for="ac_specialty">AC Specialty</label>
+		<select name="ac_specialty">
+			<option value="Window-Type" <?php echo ($getUserByID['ac_specialty'] == 'Window-Type') ? 'selected' : ''; ?>>Window-Type</option>
+			<option value="Split-Type" <?php echo ($getUserByID['ac_specialty'] == 'Split-Type') ? 'selected' : ''; ?>>Split-Type</option>
+			<option value="Central Air-Type" <?php echo ($getUserByID['ac_specialty'] == 'Central Air-Type') ? 'selected' : ''; ?>>Central Air-Type</option>
+			<option value="Portable-Type" <?php echo ($getUserByID['ac_specialty'] == 'Portable-Type') ? 'selected' : ''; ?>>Portable-Type</option>
+		</select>
+		<p><input type="submit" value="Save" name="editUserBtn"></p>
 		</p>
 	</form>
 </body>
